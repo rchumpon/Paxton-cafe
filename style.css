@@ -86,7 +86,6 @@ a {
   color: var(--complementaryColor);
 }
 
-
 .wide-container {
   max-width: 1400px;
   margin: auto;
@@ -104,7 +103,6 @@ a {
   font-size: 1rem;
   cursor: pointer;
   border-radius: 0.25rem;
-  
 }
 .btn:hover {
   background: var(--secondaryDark-color);
@@ -112,12 +110,10 @@ a {
   border: 4px var(--primaryDark-color) solid;
 }
 
-
 /* Navbar Section*/
 .navbar {
   padding-left: 2rem;
   padding-right: 2rem;
-  
 }
 
 .navbar a {
@@ -148,18 +144,28 @@ a {
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding:  4rem 2rem;
+  padding: 4rem 2rem;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
 #hero h1 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-  font-size: 3rem;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(1.8rem, 4vw, 2.8rem);
+  line-height: 1.2;
+  max-width: 900px;
+  margin: 0 auto;
   color: var(--primary-color);
-
 }
+
+#hero h1 span {
+  display: block;
+  font-size: 0.8em;
+  margin-top: 0.5rem;
+  font-weight: normal;
+}
+
 #hero p {
   font-size: 1.2rem;
   font-weight: bold;
@@ -181,22 +187,20 @@ a {
 
 /* About Us Section */
 #info {
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-align-items: center;
-gap: 20px;
-margin: 2rem;
-padding: 1rem 2rem;
-
-
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin: 2rem;
+  padding: 1rem 2rem;
 }
 #info .info-content {
   max-width: 600px;
   border-radius: 5px;
 }
 .info-content h2 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 }
 
 .info-content p {
@@ -207,7 +211,6 @@ padding: 1rem 2rem;
 .info-content .btn {
   display: inline-block;
   margin: 1rem 35%;
-  
 }
 
 .info-img img {
@@ -238,17 +241,17 @@ hr.solid {
 }
 /* Carousel Section */
 /* Carousel container spacing */
-#carousel{
+#carousel {
   padding-bottom: 50px;
 }
 .carousel-container {
   max-width: 700px; /* limits carousel width */
   height: auto;
-  margin: 0 auto; /* centers carousel on page */ 
+  margin: 0 auto; /* centers carousel on page */
 }
 
 .carousel-container h3 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   color: var(--primaryDark-color);
   padding: 20px 0;
 }
@@ -256,7 +259,9 @@ hr.solid {
 /* Set the height of your slider */
 .carousel-inner {
   height: 400px; /* short slider height */
-  background-color: var(--secondary-color); /* option shows space around smaller images */
+  background-color: var(
+    --secondary-color
+  ); /* option shows space around smaller images */
 }
 
 /* Style the images */
@@ -266,7 +271,7 @@ hr.solid {
   display: block; /* needed for centering */
   margin: 0 auto; /* center horizontally */
   object-fit: contain; /* ensures full image is visible without cropping */
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 /* Menu Section */
@@ -296,6 +301,16 @@ hr.solid {
   padding: 20px 20px;
 }
 
+/* Menu Intro Paragraph */
+#hero-menu .menu-intro {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: center;
+  margin: 1rem auto 2rem auto;
+  max-width: 600px;
+  color: var(--primaryDark-color);
+}
+
 #hero-menu .established {
   font-style: italic;
   font-size: 1.5rem;
@@ -304,7 +319,7 @@ hr.solid {
 
 #hero-menu h1 {
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 40px;
   margin-top: 0;
   padding-top: 2rem;
@@ -316,7 +331,7 @@ hr.solid {
 
 #coffee-content h2 {
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
   padding-bottom: 20px;
 }
@@ -326,10 +341,11 @@ hr.solid {
   color: var(--accent-color);
   font-size: 3rem;
   text-align: center;
-  margin:  0 10px 20px;
+  margin: 0 10px 20px;
 }
 
-.flavor, .dessert {
+.flavor,
+.dessert {
   text-align: left;
   width: 75%;
 }
@@ -355,7 +371,7 @@ hr.solid {
 
 .dessert-content h2 {
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
   padding-bottom: 20px;
 }
@@ -368,12 +384,11 @@ hr.solid {
   margin: 0 10px 20px;
 }
 
-#food-content h2{
+#food-content h2 {
   text-align: center;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 30px;
   padding-bottom: 20px;
-
 }
 
 #food-content h3 {
@@ -396,15 +411,15 @@ hr.solid {
 .features-container {
   padding: 0 10rem;
   margin-bottom: 3rem;
-} 
+}
 .features-container h4 {
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 2rem 0;
 }
 .features-container .row {
   display: flex;
   justify-content: space-between;
-} 
+}
 .features-container .card {
   padding-left: 0;
   padding-right: 0;
@@ -415,30 +430,30 @@ hr.solid {
 
 .card-body {
   display: flex;
-  flex-direction: column;   /* stacks title, text, and button vertically */
-  height: 100%;             /* fills the available space */
+  flex-direction: column; /* stacks title, text, and button vertically */
+  height: 100%; /* fills the available space */
 }
 .card-body .btn {
-  margin-top: auto;         /* pushes the button to the bottom */
+  margin-top: auto; /* pushes the button to the bottom */
 }
 .card img {
   width: 100%;
-  height: 200px;         /* keeps all images even */
+  height: 200px; /* keeps all images even */
   object-fit: cover;
 }
- .card:hover {
+.card:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 10px var(--primaryDark-color);
   width: 100%;
- }
+}
 
- .card h5 {
+.card h5 {
   color: var(--primary-color);
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
- }
- .card p {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+.card p {
   color: var(--primary-color);
- }
+}
 
 /* form component */
 .contact {
@@ -458,11 +473,10 @@ hr.solid {
 }
 .contact .content h2 {
   padding-bottom: 20px;
-  font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-size: 36px;
   font-weight: 500;
   color: var(--accent-color);
-
 }
 .contact .content p {
   font-weight: bold;
@@ -519,7 +533,7 @@ hr.solid {
 .contactForm h2 {
   font-size: 30px;
   color: var(--accent-color);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   font-weight: 500;
 }
 .contactForm .inputBox {
@@ -589,7 +603,7 @@ hr.solid {
 }
 #map h3 {
   color: var(--primaryDark-color);
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   padding: 1rem 0;
 }
 #map .map-container {
@@ -597,10 +611,92 @@ hr.solid {
   padding-bottom: 2rem;
 }
 
+/* Blog Page */
+#body-blog {
+  font-family: "Roboto", sans-serif;
+  background-color: var(--secondary-color);
+}
+
+#body-blog h1 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  text-align: center;
+  margin-bottom: 1rem;
+ 
+}
+
+#body-blog h2 {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 1.8rem;
+  margin: 2rem 0 1rem 0;
+  color: var(--primaryDark-color);
+}
+
+#body-blog p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  color: var(--primaryDark-color);
+}
+
+#body-blog img {
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  display: block;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+#body-blog .btn {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--accent-color);
+  color: var(--primary-color);
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.25rem;
+}
+/* .btn:hover {
+  background: var(--secondaryDark-color);
+  color: var(--primaryDark-color);
+  border: 4px var(--primaryDark-color) solid;
+} */
+#body-blog .btn:hover {
+  background-color: var(--secondaryDark-color);
+  color: var(--primaryDark-color);
+  border: 4px solid var(--primaryDark-color);
+}
+
+#hero-blog {
+  height: 60vh;
+  min-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 4rem 2rem;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#hero-blog .container h1 {
+  color: var(--primary-color);
+}
+
+#hero-blog .container p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--accent-color);
+  margin-top: 1rem;
+}
 
 /* Footer Section */
 #footer {
-  background-color: var(--primary-color); 
+  background-color: var(--primary-color);
   color: var(--primaryDark-color);
 }
 
