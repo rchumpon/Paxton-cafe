@@ -659,11 +659,7 @@ hr.solid {
   cursor: pointer;
   border-radius: 0.25rem;
 }
-/* .btn:hover {
-  background: var(--secondaryDark-color);
-  color: var(--primaryDark-color);
-  border: 4px var(--primaryDark-color) solid;
-} */
+
 #body-blog .btn:hover {
   background-color: var(--secondaryDark-color);
   color: var(--primaryDark-color);
@@ -690,7 +686,7 @@ hr.solid {
 #hero-blog .container p {
   font-size: 1.2rem;
   font-weight: bold;
-  color: var(--accent-color);
+  color: var(--primary-color);
   margin-top: 1rem;
 }
 
